@@ -1,0 +1,13 @@
+body {
+  padding: 5em !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.descriptions {
+  padding: 1em;
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: #333;
+}
