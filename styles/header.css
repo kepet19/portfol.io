@@ -1,10 +1,12 @@
 :root {
     --red: #D3345C;
     --white: #FFFFFF;
-    --grey: #EFEFEF;
+    --grey-light: #EFEFEF;
+    --grey: #F2F2F2;
     --dark-grey: #606060; /* #676767; */
+    --light-dark: #333333;
     --header-text-size: 1.5em;
-    font-family: "sans";
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a:link { text-decoration: none; }
@@ -52,8 +54,8 @@ a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
 }
 
 .nav {
-  list-style-type: none;
-  display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 .nav-item {
@@ -84,10 +86,6 @@ a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
     font-size: calc(var(--header-text-size) *2);
 }
 
-.center {
-    justify-content: center;
-}
-
 .form-control, .form-control[type=text] {
     background: var(--grey);
     font-size: calc( var(--header-text-size) *0.8);
@@ -103,3 +101,36 @@ a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
     color: #676767;
 }
 
+body > .container {
+    margin: 0 auto;
+    max-width: 66.66667rem;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.right {
+    display: inline-flex;
+    float: right;
+    margin-right: 2.5em;
+}
+
+.left {
+    display: inline-flex;
+    float: left;
+    margin-left: 7em;
+}
+
+.space-left {
+    padding-left: .2em;
+}
+
+footer {
+    padding: 2em 0 2em 0;
+    color: var(--grey);
+    background-color: var(--light-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
