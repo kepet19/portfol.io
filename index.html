@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>Portfol.io - Front Page</title>
-        <link rel="stylesheet" href="FrontPage.css">
+        <link rel="stylesheet" href="styles/frontpage.css">
+        <link rel="stylesheet" href="styles/header.css">
         <link href="assets\all.css" rel="stylesheet"> <!--load all styles -->
     </head>
 
     <header>
         <nav class="navbar">
             <div class="container">
-                <a class="logo" href="#">Portfol.io</a>
+                <a class="logo header-text-size" href="#">Portfol.io</a>
                 <div class="navbar-content">
                     <ul class="nav auto">
                         <li class="nav-item">
@@ -28,12 +29,17 @@
                             <a class="nav-link" href="#">Help</a>
                         </li>
 
-                        <form class="nav-flex">
+                    </ul>
+
+                    <ul class="nav right">
+                        <form class="nav-item">
                             <input class="form-control" type="search" placeholder="Search projects" aria-label="Search">
                         </form>
+                        <div class="nav-item dark-grey">
 
-                        <!--User profile icon-->
-                    </ul>                    
+                            <i class="far fa-user-circle font-awesome"></i>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </nav>
