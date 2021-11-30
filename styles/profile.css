@@ -1,4 +1,80 @@
+.profile {
+    display: flex;
+}
+
+.card {
+    border-radius: .8em;
+    border: 5px solid var(--grey-light);
+    margin: 1em;
+}
+
 .profile-pic {
-    border-radius: 360px;
+    height: 18em;
+    border-radius: 50%;
     border: 5px solid var(--red);
+    margin: 1em;
+}
+
+.card-header {
+    color: var(--red);
+    font-size: calc(var(--header-text-size) *.9);
+    font-weight: bolder;
+    margin: .5em;
+}
+
+.list-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-group-item {
+    color: var(--light-dark);
+    font-weight: bold;
+    padding: .5em;
+    margin: 0;
+    border-top: .15em solid var(--grey-light);
+    display: flex;
+    flex-direction: column;
+}
+.list-group-item > span {
+    color: var(--grey-dark);
+    font-weight: lighter;
+}
+
+.list-courses {
+    list-style-type: none;
+    display: flex;
+    border-top: .15em solid var(--grey-light);
+    padding: 0;
+    margin: 0;
+}
+
+.list-courses-item {
+    background-color: var(--red);
+    color: var(--grey);
+    padding: .3em .8em .3em .8em;
+    margin: .5em;
+    border-radius: 1.5em;
+}
+
+.button-group {
+    padding-left: 2.5em;
+    align-items: center;
+}
+
+.btn {
+    background: var(--grey-light);
+    color: var(--dark-light);
+    border-radius: 1.5em;
+    border: none;
+    font-size: calc(var(--header-text-size) *.9);
+    font-weight: bolder;
+    padding: .3em 1.2em .3em 1.2em;
+    margin: .5em;
+}
+
+.btn:first-child {
+    background-color: var(--red);
+    color: var(--white);
 }
