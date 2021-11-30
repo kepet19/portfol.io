@@ -14,8 +14,15 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+html {
+  height: 100%;
+}
+
 body {
-    margin: 0;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -103,6 +110,7 @@ a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
 
 body > .container {
     margin: 0 auto;
+    flex: 1 0 auto;
     max-width: 66.66667rem;
 }
 
