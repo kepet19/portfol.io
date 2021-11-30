@@ -1,36 +1,104 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Portfol.io - Front Page</title>
         <link rel="stylesheet" href="FrontPage.css">
         <link href="assets\all.css" rel="stylesheet"> <!--load all styles -->
     </head>
-<body>
 
-    <div class="topnav">
-        <a class="active" href="#home">Portfol.io</a>
-        <a href="#news">Home</a>
-        <a href="#contact">Projects</a>
-        <a href="#about">Courses</a>
-        <a href="#about">About</a>
-        <input type="text" placeholder="Search...">
-        <i class="fas fa-user-circle"></i>
-    </div>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Portfol.io</a>
+                <div class="navbar-content">
+                    <ul class="nav auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Projects</a>
+                        </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+
+                        <form class="nav-flex">
+                            <input class="form-control" type="search" placeholder="Search projects" aria-label="Search">
+                        </form>
+
+                        <!--User profile icon-->
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
     <div class="primary">
-        <img src="https://www.w3schools.com/images/w3schools_green.jpg">
-        <button type="button">Browse all projects</button>
+        <div>
+            <img src="https://www.w3schools.com/images/w3schools_green.jpg">
+        </div>
+        <div>
+            <button type="button">Browse all projects</button>
+        </div>
     </div>
 
     <div class="secondary">
         <ul>
-            <li>Human Computer Interaction - T510031112</li>
-            <li>Mobil Softwareudvikling</li>
-            <li>Data Management</li>
-            <li>Objektorienteret Programmering</li>
-            <li>Continous Delivery and DevOps</li>
+            Course name
+            <li class="nav-course">
+                <a class="nav-link" aria-current="page" href="#">Human Computer Interaction - T510031112</a>
+            </li>
+            <li class="nav-course">
+                <a class="nav-link" href="#">Mobil Softwareudvikling</a>
+            </li>
+            <li class="nav-course">
+                <a class="nav-link" href="#">Data Management</a>
+            </li>
+            <li class="nav-course">
+                <a class="nav-link" href="#">Objektorienteret Programmering</a>
+            </li>
+            <li class="nav-course">
+                <a class="nav-link" href="#">Continous Delivery and DevOps</a>
+            </li>
         </ul>
+    </div>
+    <div class="secondary_button"> 
         <button type="button">SEE MORE</button>
     </div>
-    
 </body>
+
+<footer>
+    <div class="center">
+        <p>TLF: <span>65 50 10 00</span> - Contact@Portfol.io - DVR-NR: <span>29283958</span> - EAN</p>
+    </div>
+    <div class="right">
+        <div class="linkedin">
+            <!--linkedin icon-->
+        </div>
+
+        <div class="facebook">
+            <!--Facebook icon-->
+        </div>
+
+        <div class="twitter">
+            <!--twitter icon-->
+        </div>
+
+        <div class="instagram">
+            <!--instagram icon-->
+        </div>
+
+        <div class="youtube">
+            <!--youtube icon-->
+        </div>
+    </div>
+</footer>
+
 </html>
