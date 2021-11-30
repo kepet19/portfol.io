@@ -6,6 +6,7 @@
     --header-text-size: 1.5em;
     font-family: "sans";
 }
+
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -34,9 +35,13 @@ a:link.logo, a:visited.logo {
     margin-left: 1em;
 }
 
-a:link.nav-link, a:visited.nav-link {
+.nav-link {
     color: var(--dark-grey);
     font-size: var(--header-text-size);
+}
+
+a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
+    color: var(--dark-grey);
 }
 
 .navbar-content {
