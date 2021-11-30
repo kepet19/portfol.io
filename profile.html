@@ -2,12 +2,15 @@
 <html>
     <head>
         <title>Portfol.io - User Profile</title>
+        <link rel="stylesheet" href="styles/profile.css"/>
+        <link rel="stylesheet" href="styles/header.css">
+        <script src="scripts/fontawesome.min.js"></script>
     </head>
 
     <header>
         <nav class="navbar">
             <div class="container">
-                <a class="logo" href="#">Portfol.io</a>
+                <a class="logo header-text-size" href="#">Portfol.io</a>
                 <div class="navbar-content">
                     <ul class="nav auto">
                         <li class="nav-item">
@@ -26,12 +29,17 @@
                             <a class="nav-link" href="#">Help</a>
                         </li>
 
-                        <form class="nav-flex">
+                    </ul>
+
+                    <ul class="nav right">
+                        <form class="nav-item">
                             <input class="form-control" type="search" placeholder="Search projects" aria-label="Search">
                         </form>
+                        <div class="nav-item dark-grey">
 
-                        <!--User profile icon-->
-                    </ul>                    
+                            <i class="far fa-user-circle font-awesome"></i>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -44,13 +52,13 @@
                     <div class="row">
                         <div class="col">
                             <div class="profile">
-                                <img src="/img/fakeperson.jpg" alt="fakeperson" width="360">
+                                <img src="/img/fakeperson.jpg" class="profile-pic" alt="fakeperson" width="360">
 
                                 <div class="card">
                                     <div class="card-header">
                                         About
                                     </div>
-    
+
                                     <ul class="list-group">
                                         <li class="list-group-item">Role <span>Student</span></li>
                                         <li class="list-group-item">Name <span>Micheal Gregersen</span></li>
