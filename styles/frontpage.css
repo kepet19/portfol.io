@@ -1,0 +1,40 @@
+.btns {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  background-color: white;
+  color: red;
+  border: 2px solid lightgray;
+  padding: 4px 8px;
+}
+
+.btn:hover {
+  background-color: lightgray;
+  color: darkred;
+  border: 2px solid lightgray;
+  padding: 4px 8px;
+}
+
+.course-link {
+  color: var(--grey-dark);
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 1px;
+  text-decoration: none;
+}
+
+.course-link:hover {
+  color: var(--red);
+}
+
+.course-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  transition: width 0.25s ease-out;
+}
