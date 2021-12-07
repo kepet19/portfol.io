@@ -5,51 +5,46 @@
     --grey-light: #DDDDDD;
     --grey-dark: #606060; /* #676767; */
     --light-dark: #333333;
-    --header-text-size: 1.5em;
+    --header-text-size: 1.2em;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
-
-html {
-    height: 100%;
-}
-
-body {
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 header {
     padding-bottom: 1em;
 }
+
 .navbar {
     background: var(--white);
-    box-shadow: 0 4px 8px 0 grey;
+    box-shadow: 0 2px 8px 0 var(--grey-dark);
     z-index: 1;
 }
 
 .navbar > .container {
     display: flex;
-    align-items: center;
 }
 
-a:link.logo, a:visited.logo {
+a:link.logo, a:visited.logo, a:hover.logo {
     color: var(--grey-dark);
+    float: left;
     margin-left: 1em;
+    text-decoration: none;
+}
+
+.dropmenuList {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+}
+
+.dropmenuItem {
+    justify-content: center;
 }
 
 .nav-link {
     color: var(--grey-dark);
     font-size: var(--header-text-size);
     position: relative;
-    padding-bottom: 1px;
-    text-decoration: none;
+    margin: 1px;
 }
 
 .nav-link:hover{
@@ -70,63 +65,36 @@ a:link.logo, a:visited.logo {
     width: 100%;
 }
 
-.navbar-content {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    float: right ;
-}
-
-.nav {
-    list-style-type: none;
-    display: flex;
-}
-
 .nav-item {
-    display:flex;
+    display: flex;
     margin: .2em 1.3em .2em 1.3em;
     justify-content: center;
 }
 
-.nav-flex {
-    margin: 0 auto;
-    float: right;
-}
-
-
-.auto {
-    margin: 0 auto;
-}
-
-.grow {
-    flex-grow: 1;
-    display: flex;
-}
-
-.header-text-size {
-    font-size: var(--header-text-size);
-}
-.font-awesome {
-    font-size: calc(var(--header-text-size) *2);
-}
-
-.form-control, .form-control[type=text] {
-    background: var(--grey);
-    font-size: calc( var(--header-text-size) *0.8);
-    margin: 0 auto;
-    border-radius: 1em;
-    border: none;
-    outline: none;
-    padding-left: .6em;
-    padding-right: .6em;
+.nav {
+    display: block;
 }
 
 .dark-grey, .dark-grey i {
     color: var(--grey-dark);
 }
 
-body > .container {
+.searchBar, .searchBar[type=text] {
+    background: var(--grey);
+    font-size: calc( var(--header-text-size) *0.8);
     margin: 0 auto;
-    flex: 1 0 auto;
-    max-width: 66.66667rem;
+    height: 2em;
+    border-radius: 1em;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.header-text-size {
+    font-size: var(--header-text-size);
+}
+
+.font-awesome {
+    font-size: calc(var(--header-text-size) * 1.5);
 }
