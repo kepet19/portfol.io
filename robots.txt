@@ -1,0 +1,5 @@
+User-agent: *
+Crawl-delay: 10
+Disallow: /profile/
+Disallow: /uploads/
+Sitemap: https://kepet19.github.io/portfol.io/sitemap.xml
