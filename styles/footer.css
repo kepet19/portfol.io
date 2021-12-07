@@ -1,0 +1,26 @@
+
+
+footer {
+    padding: 2em 0 2em 0;
+    color: var(--grey);
+    background-color: var(--light-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right {
+    display: inline-flex;
+    float: right;
+    margin-right: 2.5em;
+}
+
+.left {
+    display: inline-flex;
+    float: left;
+    margin-left: 7em;
+}
+
+.space-left {
+    padding-left: .2em;
+}
