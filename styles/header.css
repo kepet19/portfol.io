@@ -72,7 +72,7 @@ a:link.logo, a:visited.logo, a:hover.logo {
 }
 
 .nav {
-    display: block;
+    display: flex;
 }
 
 .dark-grey, .dark-grey i {
