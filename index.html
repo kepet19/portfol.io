@@ -3,7 +3,7 @@
 <html>
     <head>
         <title>Portfol.io - Front Page</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/frontpage.css">
         <link rel="stylesheet" href="styles/header.css">
         <script src="scripts/fontawesome.min.js"></script>
@@ -12,7 +12,7 @@
         <meta name="keywords" content="Portfolio, Programming, SDU">
         <meta name="author" content="kepet19">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     </head>
 
     <header>
@@ -58,35 +58,67 @@
         <div class="container">
             <div class="primary">
                 <div>
-                    <img src="https://picsum.photos/1100/550" alt="A project example photo. This image displays an example projects main photo" title="Project photo example">
+                    <img src="https://picsum.photos/1050/525" alt="A project example photo. This image displays an example projects main photo" title="Project photo example">
                 </div>
-                <div>
-                    <button type="button">Browse all projects</button>
+                <div class="btns">
+                    <a class="btn btn-primary" href="#" role="button">Browse all projects</a>
                 </div>
             </div>
-
             <div class="secondary">
-                <ul>
-                    Course name
-                    <li class="nav-course">
-                        <a class="nav-link" aria-current="page" href="#">Human Computer Interaction - T510031112</a>
-                    </li>
-                    <li class="nav-course">
-                        <a class="nav-link" href="#">Mobil Softwareudvikling</a>
-                    </li>
-                    <li class="nav-course">
-                        <a class="nav-link" href="#">Data Management</a>
-                    </li>
-                    <li class="nav-course">
-                        <a class="nav-link" href="#">Objektorienteret Programmering</a>
-                    </li>
-                    <li class="nav-course">
-                        <a class="nav-link" href="#">Continous Delivery and DevOps</a>
-                    </li>
-                </ul>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Course name</th>
+                        <th scope="col">Date created</th>
+                        <th scope="col">Member count</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        
+                      <tr>
+                        <th scope="row"><i class="fas fa-folder" title="Edit"></i></th>
+                        <td>
+                            <a class="course-link" href="#">Human Computer Interaction - T510031112</a>
+                        </td>
+                        <td>15/11/2021</td>
+                        <td>100 Members</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="fas fa-folder" title="Edit"></i></th>
+                        <td>
+                            <a class="course-link" href="#">Mobil Softwareudvikling</a>
+                        </td>
+                        <td>15/11/2021</td>
+                        <td>100 Members</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><i class="fas fa-folder" title="Edit"></i></th>
+                        <td>
+                            <a class="course-link" href="#">Data Management</a>
+                        </td>
+                        <td>15/11/2021</td>
+                        <td>100 Members</td>
+                      </tr>
+                      <th scope="row"><i class="fas fa-folder" title="Edit"></i></th>
+                      <td>
+                        <a class="course-link" href="#">Objektorienteret Programmering</a>
+                      </td>
+                      <td>15/11/2021</td>
+                      <td>100 Members</td>
+                    </tr>
+                    <th scope="row"><i class="fas fa-folder" title="Edit"></i></th>
+                    <td>
+                        <a class="course-link" href="#">Continous Delivery and DevOps</a>
+                    </td>
+                    <td>15/11/2021</td>
+                    <td>100 Members</td>
+                  </tr>
+                    </tbody>
+                  </table>
             </div>
-            <div class="secondary_button"> 
-                <button type="button">SEE MORE</button>
+            <div class="btns">
+                <a style="border: 0px" class="btn btn-primary" href="#" role="button">SEE MORE</a>
             </div>
         </div>
     </body>
