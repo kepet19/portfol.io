@@ -31,7 +31,7 @@ header {
 .navbar {
     background: var(--white);
     box-shadow: 0 4px 8px 0 grey;
-    z-index -1;
+    z-index: -1;
 }
 
 .navbar > .container {
@@ -47,10 +47,27 @@ a:link.logo, a:visited.logo {
 .nav-link {
     color: var(--grey-dark);
     font-size: var(--header-text-size);
+    position: relative;
+    padding-bottom: 1px;
+    text-decoration: none;
 }
 
-a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
-    color: var(--grey-dark);
+.nav-link:hover{
+    color: var(--red);
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--red);
+    transition: width 0.25s ease-out;
+}
+
+.nav-link:hover::before{
+    width: 100%;
 }
 
 .navbar-content {
@@ -104,8 +121,8 @@ a:link.nav-link, a:visited.nav-link, a:link i, a:visited i {
     padding-right: .6em;
 }
 
-.dark-grey {
-    color: #676767;
+.dark-grey, .dark-grey i {
+    color: var(--grey-dark);
 }
 
 body > .container {
